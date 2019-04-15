@@ -1,0 +1,29 @@
+nat :: Integer -> [Integer]
+nat 0 = []
+nat 1 = [1]
+nat n = nat(n-1)++[n]
+
+nechet :: Integer -> [Integer]
+nechet 0 = []
+nechet 1 = [1]
+nechet n = (nechet(n-1))++[(2*n - 1)]
+
+chet :: Integer -> [Integer]
+chet 0 = []
+chet n = (chet(n-1))++[2*n]
+
+kvadro :: Integer -> [Integer]
+kvadro 0 = []
+kvadro n = (kvadro(n-1))++[(n*n)]
+
+
+fact :: Integer -> [Integer]
+factorial 0 = 1
+factorial x = x*factorial(x-1)
+fact 0 = [ ]
+fact x = fact (x-1)++[factorial(x)] 
+
+kvadrat :: Integer -> [Integer]
+kvadrat 0 = [1]
+kvadrat n = kvadrat(n-1)++[2^n]
+
